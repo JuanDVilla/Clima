@@ -1,0 +1,164 @@
+/*
+* Always set the map height explicitly to define the size of the div element
+* that contains the map.
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.div-izquierdo {
+    height: 100%;
+    width: 15%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.div-derecho {
+    height: 100%;
+    width: 85%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: flex;   
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.div-derecho .table {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    margin-top: 10;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.terminos {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.terminos-historial {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton-location {
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-list-historial {
+    display: flex;
+    flex-direction: column;
+}
+  
+.term {
+    margin: 10px;
+}
+
+.term .boton {
+    width: 100%;
+}
+  
+  
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.box-arriba {
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+}
+
+.box-arriba:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.box-abajo {
+    height: 50%;
+    width: 100%;
+}
+
+.box-abajo:nth-child(even) {
+    background-color: #ffffff;
+}

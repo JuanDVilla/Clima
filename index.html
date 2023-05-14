@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <style>
+        
+  </style>
+  <body>
+    <div id="izquierdo" class="div-izquierdo">   
+      <div id="titulo" class="titulo">
+        <h1>Ciudades</h1>
+      </div> 
+      <div id="terminos" class="terminos">
+          <div id="terms-list"></div>
+      </div>
+      <div id="titulo" class="titulo">
+        <h1>Historial</h1>
+      </div>
+      <div id="terminos-historial" class="terminos-historial">
+          <div id="terms-list-historial" class="terms-list-historial"></div>
+      </div>
+      <div id="boton-location" class="boton-location"></div>            
+    </div>
+    <div id="derecho" class="div-derecho">
+      <div id="map" class="map"></div>
+      <div id="table" class="table hidden">
+        <table>
+          <thead>
+            <tr>
+              <th>Ciudad</th>
+              <th>Fecha y Hora de Medicion</th>
+              <th>Fecha y Hora de Consulta</th>
+              <th>Humedad</th>
+            </tr>
+          </thead>
+          <tbody id="table-historial">
+          </tbody>
+        </table>        
+      </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDij13OXdeLZqQiY3JFOlSnV71bmIB6uvc&callback=initMap&v=weekly" defer></script>
+       
+  </body>
+</html>
